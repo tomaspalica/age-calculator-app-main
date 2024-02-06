@@ -1,0 +1,17 @@
+.date-form input {
+  width: 30%;
+
+  padding: 0px;
+  margin: 0px;
+}
+// .date-form label {
+//   display: flex;
+//   flex-direction: column;
+//   width: 20%;
+//   height: 60px;
+// }
+.input-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
