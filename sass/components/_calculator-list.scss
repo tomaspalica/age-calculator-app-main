@@ -1,8 +1,14 @@
 .calculator-list {
   list-style: none;
-  font-size: 32px;
+  font-size: 42px;
   padding: 0px;
+  margin: 0px;
 }
 .calculator-list span {
   color: $Purple;
+}
+@media (min-width: 376px) {
+  .calculator-list {
+    font-size: 70px;
+  }
 }
