@@ -5,11 +5,17 @@
   transform: translate(-50%, -50%);
   background-color: $White;
   width: 80%;
-  max-width: 500px;
+  max-width: 590px;
 
-  border-radius: 20px 20px 80px 20px;
-  padding: 30px 30px;
+  border-radius: 20px 20px 90px 20px;
+  padding: 30px 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+@media (min-width: 386px) {
+  .calculator {
+    border-bottom-right-radius: 150px;
+  }
 }

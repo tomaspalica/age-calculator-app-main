@@ -11,7 +11,16 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Age calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -30,13 +39,15 @@
       <form class="date-form">
         <div class="input-wrapper">
           <div class="date-input-wrapper">
-            <label for="day">Day</label> <input id="day" />
+            <label for="day">DAY</label> <input id="day" placeholder="DD" />
           </div>
           <div class="date-input-wrapper">
-            <label for="month">Month </label><input id="month" />
+            <label for="month">MONTH </label
+            ><input id="month" placeholder="MM" />
           </div>
           <div class="date-input-wrapper">
-            <label for="year">Year</label> <input id="year" />
+            <label for="year">YEAR</label>
+            <input id="year" placeholder="YYYY" />
           </div>
         </div>
 
@@ -46,7 +57,7 @@
 
       <ul class="calculator-list">
         <li class="years"><span>--</span> years</li>
-        <li class="months"><span>--</span> moths</li>
+        <li class="months"><span>--</span> months</li>
         <li class="days"><span>--</span> days</li>
       </ul>
     </div>
