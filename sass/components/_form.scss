@@ -5,6 +5,7 @@
   justify-content: space-between;
   gap: 30px;
 }
+
 // .date-form label {
 //   display: flex;
 //   flex-direction: column;
@@ -29,7 +30,15 @@
   font-weight: 400;
   letter-spacing: 0.3em;
 }
-.date-input-wrapper input {
+.date-input-wrapper span {
+  font-size: 1.4vw;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
+  color: $Light-red;
+}
+
+.date-input {
   border-width: 1px;
   height: 30px;
   border-color: $Light-grey;
@@ -38,8 +47,9 @@
   border-radius: 5px;
   font-family: "Poppins";
   color: $Smokey-grey;
+  font-size: 3vw;
 }
-.date-input-wrapper input::placeholder {
+.date-input::placeholder {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
@@ -50,6 +60,10 @@
   border-radius: 50%;
   border-width: 0px;
   z-index: 3;
+}
+.date-button img {
+  width: 20px;
+  height: 20px;
 }
 .line {
   position: absolute;
@@ -63,10 +77,15 @@
 //   position: relative;
 //   width: 100%;
 // }
+@media (min-width: 700px) {
+  .date-input-wrapper input {
+    font-size: 32px;
+  }
+}
 
 @media (min-width: 386px) {
   .line {
-    bottom: 70%;
+    bottom: 69%;
   }
   .date-button {
     width: 65px;
@@ -80,15 +99,21 @@
     align-items: flex-end;
     gap: 10px;
   }
-  .date-input-wrapper input {
-    height: 5vw;
+  .date-input {
+    height: 50px;
     padding-left: 15px;
-    font-size: 3vw;
+  }
+  .date-input-wrapper span {
+    font-size: 7px;
+  }
+  .date-button img {
+    width: 30px;
+    height: 30px;
   }
 }
-@media (min-width: 1030px) {
-  .date-input-wrapper input {
-    font-size: 32px;
-    height: 50px;
-  }
+.hidden {
+  visibility: hidden;
+}
+.red-border {
+  border-color: $Light-red;
 }

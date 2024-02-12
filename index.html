@@ -21,6 +21,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Age calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -39,20 +43,26 @@
       <form class="date-form">
         <div class="input-wrapper">
           <div class="date-input-wrapper">
-            <label for="day">DAY</label> <input id="day" placeholder="DD" />
+            <label for="day">DAY</label>
+            <input id="day" name="day" class="date-input" placeholder="DD" />
+            <span class="hidden">Invalid day</span>
           </div>
           <div class="date-input-wrapper">
             <label for="month">MONTH </label
-            ><input id="month" placeholder="MM" />
+            ><input id="month" class="date-input" placeholder="MM" />
+            <span class="hidden">Invalid month</span>
           </div>
           <div class="date-input-wrapper">
             <label for="year">YEAR</label>
-            <input id="year" placeholder="YYYY" />
+            <input id="year" class="date-input" placeholder="YYYY" />
+            <span class="hidden">Invalid year</span>
           </div>
         </div>
 
         <div class="line"></div>
-        <button type="submit" class="date-button"></button>
+        <button type="submit" class="date-button">
+          <img src="assets/images/icon-arrow.svg" />
+        </button>
       </form>
 
       <ul class="calculator-list">
@@ -67,5 +77,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
